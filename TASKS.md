@@ -16,7 +16,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Configurar el servidor Express y el endpoint de salud.
 - [x] Definir las seis rutas de productos.
 - [x] Inicializar un repositorio Git independiente.
-- [ ] Configurar la base de datos local del proyecto.
+- [x] Configurar la base de datos local del proyecto.
 - [ ] Implementar los controladores de productos.
 - [ ] Validar entradas y manejar errores.
 - [ ] Probar todos los endpoints con MySQL.
@@ -28,12 +28,12 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 ## 🔐 1. Configuración Local
 
 - [x] Crear `.env` a partir de `.env.example`.
-- [ ] Completar las variables locales:
+- [x] Completar las variables locales:
   - [x] `PORT`
   - [x] `DB_HOST`
   - [x] `DB_PORT`
   - [x] `DB_USER`
-  - [ ] `DB_PASSWORD` (captura local pendiente)
+  - [x] `DB_PASSWORD`
   - [x] `DB_NAME`
 - [x] Confirmar que `.env` continúa excluido por `.gitignore`.
 - [x] Evitar escribir contraseñas directamente en el código fuente.
@@ -42,20 +42,20 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 
 ## 🗄️ 2. Base de Datos
 
-- [ ] Ejecutar `database/schema.sql` en MySQL.
-- [ ] Confirmar la creación de la base `products_db`.
-- [ ] Confirmar la creación de la tabla `products`.
-- [ ] Verificar los campos de la tabla:
-  - [ ] `id` entero, autoincremental y llave primaria.
-  - [ ] `name` obligatorio.
-  - [ ] `price` decimal con dos posiciones y obligatorio.
-  - [ ] `stock` entero y obligatorio.
-  - [ ] `description` obligatorio.
-  - [ ] `brand` opcional.
-  - [ ] `img` opcional.
-  - [ ] `active` booleano, obligatorio y con valor inicial verdadero.
-- [ ] Confirmar la conexión desde `src/conf/dbConnection.ts`.
-- [ ] Insertar productos de prueba si se necesitan para validar las consultas.
+- [x] Ejecutar `database/schema.sql` en MySQL.
+- [x] Confirmar la creación de la base `products_db`.
+- [x] Confirmar la creación de la tabla `products`.
+- [x] Verificar los campos de la tabla:
+  - [x] `id` entero, autoincremental y llave primaria.
+  - [x] `name` obligatorio.
+  - [x] `price` decimal con dos posiciones y obligatorio.
+  - [x] `stock` entero y obligatorio.
+  - [x] `description` obligatorio.
+  - [x] `brand` opcional.
+  - [x] `img` opcional.
+  - [x] `active` booleano, obligatorio y con valor inicial verdadero.
+- [x] Confirmar la conexión desde `src/conf/dbConnection.ts`.
+- [x] Mantener la tabla vacía para crear los productos de prueba mediante la API.
 
 ---
 
