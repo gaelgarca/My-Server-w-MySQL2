@@ -142,17 +142,16 @@ Comprueba los tipos sin generar archivos.
 
 ## 📌 Estado del Proyecto
 
-**Fase actual:** estructura inicial preparada y entorno validado.
+**Fase actual:** controladores conectados a MySQL y validados.
 
-Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. La integración de las operaciones de productos con MySQL se encuentra en desarrollo.
+Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las seis operaciones de productos utilizan consultas parametrizadas, validan las entradas esenciales y trabajan con la base de datos local.
 
 ---
 
 ## 🧭 Próximos Pasos
 
-1. Crear el archivo `.env` con las credenciales locales.
-2. Ejecutar `database/schema.sql` en MySQL.
-3. Implementar validaciones de IDs, precios y cuerpos de solicitud.
-4. Programar las seis consultas utilizando parámetros `?`.
-5. Probar cada endpoint con `http/products.http`.
-6. Verificar los casos exitosos, datos inválidos y productos inexistentes.
+1. Revisar de forma global las validaciones y el manejo de errores.
+2. Completar las solicitudes de `http/products.http`.
+3. Ejecutar todos los casos exitosos e inválidos.
+4. Reunir la evidencia de funcionamiento.
+5. Verificar la ejecución compilada y publicar el repositorio.

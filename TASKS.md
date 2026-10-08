@@ -17,7 +17,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Definir las seis rutas de productos.
 - [x] Inicializar un repositorio Git independiente.
 - [x] Configurar la base de datos local del proyecto.
-- [ ] Implementar los controladores de productos.
+- [x] Implementar los controladores de productos.
 - [ ] Validar entradas y manejar errores.
 - [ ] Probar todos los endpoints con MySQL.
 - [ ] Completar la evidencia de funcionamiento.
@@ -65,50 +65,50 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 ### Obtener todos los productos
 
-- [ ] Implementar `getAllProducts`.
-- [ ] Consultar solamente productos con `active = TRUE`.
-- [ ] Responder con un arreglo JSON.
+- [x] Implementar `getAllProducts`.
+- [x] Consultar solamente productos con `active = TRUE`.
+- [x] Responder con un arreglo JSON.
 
 ### Obtener un producto por ID
 
-- [ ] Implementar `getProductById`.
-- [ ] Validar que `id` sea un entero positivo.
-- [ ] Buscar solamente productos activos.
-- [ ] Responder `404` si no existe o está inactivo.
+- [x] Implementar `getProductById`.
+- [x] Validar que `id` sea un entero positivo.
+- [x] Buscar solamente productos activos.
+- [x] Responder `404` si no existe o está inactivo.
 
 ### Crear un producto
 
-- [ ] Implementar `createProduct`.
-- [ ] Validar `name`, `price`, `stock` y `description`.
-- [ ] Permitir que `brand` e `img` sean opcionales.
-- [ ] Validar que `price` sea numérico y mayor que cero.
-- [ ] Validar que `stock` sea un entero válido.
-- [ ] Utilizar una consulta `INSERT` parametrizada.
-- [ ] Responder con estado `201` y el identificador generado.
+- [x] Implementar `createProduct`.
+- [x] Validar `name`, `price`, `stock` y `description`.
+- [x] Permitir que `brand` e `img` sean opcionales.
+- [x] Validar que `price` sea numérico y mayor que cero.
+- [x] Validar que `stock` sea un entero válido.
+- [x] Utilizar una consulta `INSERT` parametrizada.
+- [x] Responder con estado `201` y el identificador generado.
 
 ### Actualizar un producto
 
-- [ ] Implementar `updateProduct`.
-- [ ] Validar el ID y el cuerpo completo.
-- [ ] Actualizar solamente un producto activo.
-- [ ] Utilizar una consulta `UPDATE` parametrizada.
-- [ ] Responder `404` cuando el producto no exista o esté inactivo.
+- [x] Implementar `updateProduct`.
+- [x] Validar el ID y el cuerpo completo.
+- [x] Actualizar solamente un producto activo.
+- [x] Utilizar una consulta `UPDATE` parametrizada.
+- [x] Responder `404` cuando el producto no exista o esté inactivo.
 
 ### Dar de baja un producto
 
-- [ ] Implementar `deleteProduct`.
-- [ ] Validar el ID recibido.
-- [ ] Cambiar `active` a `FALSE`.
-- [ ] No utilizar una sentencia `DELETE` física.
-- [ ] Responder `404` cuando el producto no exista o ya esté inactivo.
+- [x] Implementar `deleteProduct`.
+- [x] Validar el ID recibido.
+- [x] Cambiar `active` a `FALSE`.
+- [x] No utilizar una sentencia `DELETE` física.
+- [x] Responder `404` cuando el producto no exista o ya esté inactivo.
 
 ### Cambiar el precio
 
-- [ ] Implementar `changePrice`.
-- [ ] Aceptar solamente `price` en el cuerpo de la solicitud.
-- [ ] Validar que el precio sea numérico y mayor que cero.
-- [ ] Modificar exclusivamente el campo `price`.
-- [ ] Responder `404` cuando el producto no exista o esté inactivo.
+- [x] Implementar `changePrice`.
+- [x] Aceptar solamente `price` en el cuerpo de la solicitud.
+- [x] Validar que el precio sea numérico y mayor que cero.
+- [x] Modificar exclusivamente el campo `price`.
+- [x] Responder `404` cuando el producto no exista o esté inactivo.
 
 ---
 
