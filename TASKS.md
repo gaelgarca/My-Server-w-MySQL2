@@ -27,16 +27,16 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 
 ## 🔐 1. Configuración Local
 
-- [ ] Crear `.env` a partir de `.env.example`.
+- [x] Crear `.env` a partir de `.env.example`.
 - [ ] Completar las variables locales:
-  - [ ] `PORT`
-  - [ ] `DB_HOST`
-  - [ ] `DB_PORT`
-  - [ ] `DB_USER`
-  - [ ] `DB_PASSWORD`
-  - [ ] `DB_NAME`
-- [ ] Confirmar que `.env` continúa excluido por `.gitignore`.
-- [ ] Evitar escribir contraseñas directamente en el código fuente.
+  - [x] `PORT`
+  - [x] `DB_HOST`
+  - [x] `DB_PORT`
+  - [x] `DB_USER`
+  - [ ] `DB_PASSWORD` (captura local pendiente)
+  - [x] `DB_NAME`
+- [x] Confirmar que `.env` continúa excluido por `.gitignore`.
+- [x] Evitar escribir contraseñas directamente en el código fuente.
 
 ---
 
@@ -209,4 +209,3 @@ El proyecto estará terminado cuando:
 - [ ] Las pruebas cubran casos exitosos y casos inválidos.
 - [ ] La documentación permita instalar y ejecutar el proyecto.
 - [ ] El repositorio público de GitHub esté actualizado.
-
