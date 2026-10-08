@@ -1,0 +1,10 @@
+{
+  "explorer.compactFolders": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true
+  }
+}
+

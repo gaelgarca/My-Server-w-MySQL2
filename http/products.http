@@ -1,0 +1,45 @@
+@baseUrl = http://localhost:3000/api/v1/products
+
+### Obtener productos activos
+GET {{baseUrl}}/getAll
+
+### Obtener un producto activo por ID
+GET {{baseUrl}}/getById/1
+
+### Crear un producto
+POST {{baseUrl}}/create
+Content-Type: application/json
+
+{
+  "name": "Producto de prueba",
+  "price": 49.90,
+  "stock": 10,
+  "description": "Producto utilizado para comprobar la API",
+  "brand": "Marca de prueba",
+  "img": null
+}
+
+### Actualizar un producto
+PUT {{baseUrl}}/update/1
+Content-Type: application/json
+
+{
+  "name": "Producto actualizado",
+  "price": 59.90,
+  "stock": 8,
+  "description": "Producto actualizado mediante la API",
+  "brand": "Marca de prueba",
+  "img": null
+}
+
+### Cambiar únicamente el precio
+PATCH {{baseUrl}}/change-price/1
+Content-Type: application/json
+
+{
+  "price": 54.90
+}
+
+### Dar de baja lógicamente un producto
+DELETE {{baseUrl}}/delete/1
+
