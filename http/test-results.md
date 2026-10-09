@@ -1,10 +1,10 @@
-# 🧪 Resultados de Pruebas HTTP
+# Resultados de Pruebas HTTP
 
 Verificación realizada el **8 de octubre de 2026** sobre la versión compilada del servidor y la base de datos local `products_db`.
 
 ---
 
-## ⚙️ Entorno
+## Entorno
 
 - Node.js `24.19.0`
 - npm `11.17.0`
@@ -13,7 +13,7 @@ Verificación realizada el **8 de octubre de 2026** sobre la versión compilada 
 
 ---
 
-## 📊 Resultados
+## Resultados
 
 | Solicitud | Resultado esperado | Resultado obtenido |
 |---|---:|---:|
@@ -33,7 +33,7 @@ Verificación realizada el **8 de octubre de 2026** sobre la versión compilada 
 
 ---
 
-## 🔄 Recorrido Comprobado
+## Recorrido Comprobado
 
 1. Se creó el producto temporal con ID `4`.
 2. El producto apareció en la consulta general de productos activos.
@@ -47,7 +47,7 @@ Verificación realizada el **8 de octubre de 2026** sobre la versión compilada 
 
 ---
 
-## ✅ Comprobaciones Adicionales
+## Comprobaciones Adicionales
 
 - `npm run build` terminó sin errores.
 - Todas las respuestas HTTP comprobadas utilizaron JSON.
@@ -57,7 +57,7 @@ Verificación realizada el **8 de octubre de 2026** sobre la versión compilada 
 
 ---
 
-## 🛠️ Verificación de Producción
+## Verificación de Producción
 
 - `npm run typecheck` terminó sin errores.
 - `npm run build` generó correctamente `dist/app.js` y sus módulos.
@@ -69,7 +69,7 @@ Verificación realizada el **8 de octubre de 2026** sobre la versión compilada 
 
 ---
 
-## 🚀 Repetir la Prueba
+## Repetir la Prueba
 
 1. Ejecutar `npm run build`.
 2. Iniciar el servidor con `npm start`.

@@ -1,10 +1,10 @@
-# ✅ Tareas del Proyecto
+# Tareas del Proyecto
 
 Lista de trabajo para completar la API REST de productos con **Node.js**, **Express**, **TypeScript** y **MySQL2**.
 
 ---
 
-## 📊 Estado General
+## Estado General
 
 - [x] Crear la carpeta independiente del proyecto.
 - [x] Inicializar el proyecto con npm.
@@ -21,11 +21,12 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Validar entradas y manejar errores.
 - [x] Probar todos los endpoints con MySQL.
 - [x] Completar la evidencia de funcionamiento.
+- [x] Completar la documentación de instalación, uso y respuestas.
 - [x] Publicar el proyecto en GitHub.
 
 ---
 
-## 🔐 1. Configuración Local
+## 1. Configuración Local
 
 - [x] Crear `.env` a partir de `.env.example`.
 - [x] Completar las variables locales:
@@ -40,7 +41,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 
 ---
 
-## 🗄️ 2. Base de Datos
+## 2. Base de Datos
 
 - [x] Ejecutar `database/schema.sql` en MySQL.
 - [x] Confirmar la creación de la base `products_db`.
@@ -59,7 +60,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 
 ---
 
-## 🧠 3. Controladores de Productos
+## 3. Controladores de Productos
 
 Archivo principal: `src/controllers/products.controller.ts`.
 
@@ -112,7 +113,7 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 ---
 
-## 🛡️ 4. Validaciones y Manejo de Errores
+## 4. Validaciones y Manejo de Errores
 
 - [x] Utilizar consultas parametrizadas con `?` en todas las operaciones.
 - [x] No concatenar valores de las solicitudes dentro del SQL.
@@ -126,7 +127,7 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 ---
 
-## 🌐 5. Endpoints que Deben Funcionar
+## 5. Endpoints que Deben Funcionar
 
 - [x] `GET /api/v1/products/getAll`
 - [x] `GET /api/v1/products/getById/:id`
@@ -138,7 +139,7 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 ---
 
-## 🧪 6. Pruebas HTTP
+## 6. Pruebas HTTP
 
 Actualizar y ejecutar las solicitudes de `http/products.http`.
 
@@ -159,7 +160,7 @@ Actualizar y ejecutar las solicitudes de `http/products.http`.
 
 ---
 
-## 🛠️ 7. Verificación Técnica
+## 7. Verificación Técnica
 
 - [x] Ejecutar `npm run typecheck` sin errores.
 - [x] Ejecutar `npm run build` sin errores.
@@ -171,18 +172,18 @@ Actualizar y ejecutar las solicitudes de `http/products.http`.
 
 ---
 
-## 📘 8. Documentación
+## 8. Documentación
 
-- [ ] Actualizar `README.md` cuando la implementación esté completa.
-- [ ] Documentar los requisitos y comandos de ejecución.
-- [ ] Documentar la configuración de la base de datos.
-- [ ] Documentar el cuerpo JSON de `POST`, `PUT` y `PATCH`.
-- [ ] Documentar los códigos de respuesta principales.
-- [ ] Confirmar que los nombres de rutas coinciden con el código.
+- [x] Actualizar `README.md` cuando la implementación esté completa.
+- [x] Documentar los requisitos y comandos de ejecución.
+- [x] Documentar la configuración de la base de datos.
+- [x] Documentar el cuerpo JSON de `POST`, `PUT` y `PATCH`.
+- [x] Documentar los códigos de respuesta principales.
+- [x] Confirmar que los nombres de rutas coinciden con el código.
 
 ---
 
-## 📦 9. Git y GitHub
+## 9. Git y GitHub
 
 - [x] Crear el repositorio Git local independiente.
 - [x] Configurar la rama principal como `main`.
@@ -196,16 +197,16 @@ Actualizar y ejecutar las solicitudes de `http/products.http`.
 
 ---
 
-## 🏁 Definición de Proyecto Completo
+## Definición de Proyecto Completo
 
 El proyecto estará terminado cuando:
 
-- [ ] Las seis operaciones funcionen con datos reales de MySQL.
-- [ ] Las consultas normales oculten productos inactivos.
-- [ ] La eliminación sea exclusivamente lógica.
-- [ ] Todas las entradas esenciales estén validadas.
-- [ ] Los códigos HTTP sean correctos.
-- [ ] TypeScript compile sin errores.
-- [ ] Las pruebas cubran casos exitosos y casos inválidos.
-- [ ] La documentación permita instalar y ejecutar el proyecto.
-- [ ] El repositorio público de GitHub esté actualizado.
+- [x] Las seis operaciones funcionen con datos reales de MySQL.
+- [x] Las consultas normales oculten productos inactivos.
+- [x] La eliminación sea exclusivamente lógica.
+- [x] Todas las entradas esenciales estén validadas.
+- [x] Los códigos HTTP sean correctos.
+- [x] TypeScript compile sin errores.
+- [x] Las pruebas cubran casos exitosos y casos inválidos.
+- [x] La documentación permita instalar y ejecutar el proyecto.
+- [x] El repositorio público de GitHub esté actualizado.
