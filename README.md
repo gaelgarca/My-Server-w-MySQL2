@@ -45,9 +45,21 @@ My-Server-w-MySQL2/
 |   \-- settings.json
 |-- database/
 |   \-- schema.sql
+|-- evidencias/
+|   |-- mysql/
+|   |   |-- 01-producto-activo.png
+|   |   \-- 02-producto-inactivo.png
+|   \-- thunder-client/
+|       |-- 00-get-health.png
+|       |-- 01-post-crear-producto.png
+|       |-- 02-get-listar-productos.png
+|       |-- 03-get-producto-por-id.png
+|       |-- 04-put-actualizar-producto.png
+|       |-- 05-patch-cambiar-precio.png
+|       |-- 06-delete-baja-logica.png
+|       \-- 07-get-despues-de-baja-404.png
 |-- http/
-|   |-- products.http
-|   \-- test-results.md
+|   \-- products.http
 |-- src/
 |   |-- conf/
 |   |   \-- dbConnection.ts
@@ -61,7 +73,6 @@ My-Server-w-MySQL2/
 |-- .env.example
 |-- .gitignore
 |-- package.json
-|-- TASKS.md
 |-- tsconfig.json
 \-- README.md
 ```
@@ -84,9 +95,13 @@ Define las rutas de la API y relaciona cada endpoint con su controlador.
 
 Contiene el esquema SQL para crear la base de datos y la tabla `products`.
 
+### evidencias
+
+Contiene capturas de Thunder Client para cada endpoint y capturas de MySQL que demuestran el estado del producto antes y después de la baja lógica.
+
 ### http
 
-Contiene una colección reproducible de solicitudes y el informe de las pruebas ejecutadas.
+Contiene una colección reproducible de solicitudes para probar la API.
 
 ## Instalación
 
@@ -325,7 +340,9 @@ Orden recomendado:
 9. Dar de baja el producto.
 10. Confirmar que ya no aparece en las consultas.
 
-Los resultados de la verificación están documentados en `http/test-results.md`.
+Cada solicitud indica el código HTTP esperado para facilitar la comprobación del resultado.
+
+Las capturas de la ejecución se encuentran en `evidencias/thunder-client`. La carpeta `evidencias/mysql` muestra que el producto permanece almacenado y que la baja modifica únicamente el campo `active`.
 
 ## Estado del proyecto
 
