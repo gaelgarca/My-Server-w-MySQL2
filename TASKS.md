@@ -161,13 +161,13 @@ Actualizar y ejecutar las solicitudes de `http/products.http`.
 
 ## 🛠️ 7. Verificación Técnica
 
-- [ ] Ejecutar `npm run typecheck` sin errores.
-- [ ] Ejecutar `npm run build` sin errores.
-- [ ] Ejecutar `npm start` desde `dist/app.js`.
-- [ ] Confirmar que el servidor inicia con las variables de entorno.
-- [ ] Confirmar que la API maneja correctamente una conexión fallida.
-- [ ] Revisar que no existan archivos sensibles preparados para commit.
-- [ ] Revisar el estado final con `git status`.
+- [x] Ejecutar `npm run typecheck` sin errores.
+- [x] Ejecutar `npm run build` sin errores.
+- [x] Ejecutar `npm start` desde `dist/app.js`.
+- [x] Confirmar que el servidor inicia con las variables de entorno.
+- [x] Confirmar que la API maneja correctamente una conexión fallida.
+- [x] Revisar que no existan archivos sensibles preparados para commit.
+- [x] Revisar el estado final con `git status`.
 
 ---
 

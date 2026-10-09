@@ -143,14 +143,13 @@ Comprueba los tipos sin generar archivos.
 
 ## 📌 Estado del Proyecto
 
-**Fase actual:** pruebas HTTP y evidencia completadas.
+**Fase actual:** verificación técnica de producción completada.
 
-Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las operaciones fueron comprobadas con datos reales de la base local y la colección HTTP conserva un recorrido reproducible con casos exitosos e inválidos.
+Las dependencias están instaladas, TypeScript compila correctamente y la versión generada en `dist` inicia con `npm start`. Las operaciones fueron comprobadas con datos reales y los fallos de conexión producen respuestas JSON controladas.
 
 ---
 
 ## 🧭 Próximos Pasos
 
-1. Completar la verificación técnica de producción.
-2. Terminar la documentación de cuerpos y respuestas.
-3. Realizar la revisión final del repositorio publicado.
+1. Terminar la documentación de cuerpos y respuestas.
+2. Realizar la revisión final del repositorio publicado.

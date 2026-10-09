@@ -57,6 +57,18 @@ Verificación realizada el **8 de octubre de 2026** sobre la versión compilada 
 
 ---
 
+## 🛠️ Verificación de Producción
+
+- `npm run typecheck` terminó sin errores.
+- `npm run build` generó correctamente `dist/app.js` y sus módulos.
+- `npm start` ejecutó la versión compilada desde `dist/app.js`.
+- `/health` respondió `200` con las variables locales cargadas.
+- `/api/v1/products/getAll` respondió `200`, confirmando la conexión con MySQL.
+- Una ejecución aislada con un puerto de MySQL inexistente respondió `500` con un mensaje JSON genérico.
+- Los servidores de verificación fueron detenidos y los puertos `3000` y `3001` quedaron libres.
+
+---
+
 ## 🚀 Repetir la Prueba
 
 1. Ejecutar `npm run build`.
