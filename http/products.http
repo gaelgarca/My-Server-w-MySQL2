@@ -2,16 +2,13 @@
 @productsUrl = {{host}}/api/v1/products
 
 ### Comprobar que el servidor está disponible
-# Respuesta esperada: 200
 GET {{host}}/health
 
 ### Consultar los productos activos antes de la prueba
-# Respuesta esperada: 200
 GET {{productsUrl}}/getAll
 
 ### Crear el producto que se utilizará en el recorrido
 # @name crearProducto
-# Respuesta esperada: 201
 POST {{productsUrl}}/create
 Content-Type: application/json
 
@@ -25,11 +22,9 @@ Content-Type: application/json
 }
 
 ### Consultar el producto activo recién creado
-# Respuesta esperada: 200
 GET {{productsUrl}}/getById/{{crearProducto.response.body.$.product.id}}
 
 ### Actualizar completamente el producto creado
-# Respuesta esperada: 200
 PUT {{productsUrl}}/update/{{crearProducto.response.body.$.product.id}}
 Content-Type: application/json
 
@@ -43,7 +38,6 @@ Content-Type: application/json
 }
 
 ### Cambiar únicamente el precio del producto
-# Respuesta esperada: 200
 PATCH {{productsUrl}}/change-price/{{crearProducto.response.body.$.product.id}}
 Content-Type: application/json
 
@@ -52,27 +46,21 @@ Content-Type: application/json
 }
 
 ### Dar de baja lógicamente el producto
-# Respuesta esperada: 200
 DELETE {{productsUrl}}/delete/{{crearProducto.response.body.$.product.id}}
 
 ### Confirmar que el producto dado de baja no aparece en el listado
-# Respuesta esperada: 200; el producto creado no debe aparecer
 GET {{productsUrl}}/getAll
 
 ### Confirmar que el producto dado de baja ya no puede consultarse por ID
-# Respuesta esperada: 404
 GET {{productsUrl}}/getById/{{crearProducto.response.body.$.product.id}}
 
 ### Consultar un producto inexistente
-# Respuesta esperada: 404
 GET {{productsUrl}}/getById/2147483647
 
 ### Consultar con un ID inválido
-# Respuesta esperada: 400
 GET {{productsUrl}}/getById/abc
 
 ### Intentar crear un producto con precio inválido
-# Respuesta esperada: 400
 POST {{productsUrl}}/create
 Content-Type: application/json
 
@@ -86,7 +74,6 @@ Content-Type: application/json
 }
 
 ### Intentar crear un producto con un cuerpo incompleto
-# Respuesta esperada: 400
 POST {{productsUrl}}/create
 Content-Type: application/json
 
