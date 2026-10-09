@@ -142,9 +142,9 @@ Comprueba los tipos sin generar archivos.
 
 ## 📌 Estado del Proyecto
 
-**Fase actual:** controladores, validaciones y manejo de errores completados.
+**Fase actual:** endpoints conectados a MySQL y verificados.
 
-Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las seis operaciones utilizan consultas parametrizadas, validan las entradas esenciales y devuelven respuestas JSON controladas para errores de cliente, recursos inexistentes y fallos internos.
+Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las seis operaciones utilizan consultas parametrizadas, validan las entradas esenciales y fueron comprobadas con datos reales de la base local.
 
 ---
 

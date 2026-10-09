@@ -19,7 +19,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Configurar la base de datos local del proyecto.
 - [x] Implementar los controladores de productos.
 - [x] Validar entradas y manejar errores.
-- [ ] Probar todos los endpoints con MySQL.
+- [x] Probar todos los endpoints con MySQL.
 - [ ] Completar la evidencia de funcionamiento.
 - [ ] Publicar el proyecto en GitHub.
 
@@ -128,13 +128,13 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 ## 🌐 5. Endpoints que Deben Funcionar
 
-- [ ] `GET /api/v1/products/getAll`
-- [ ] `GET /api/v1/products/getById/:id`
-- [ ] `POST /api/v1/products/create`
-- [ ] `PUT /api/v1/products/update/:id`
-- [ ] `DELETE /api/v1/products/delete/:id`
-- [ ] `PATCH /api/v1/products/change-price/:id`
-- [ ] `GET /health`
+- [x] `GET /api/v1/products/getAll`
+- [x] `GET /api/v1/products/getById/:id`
+- [x] `POST /api/v1/products/create`
+- [x] `PUT /api/v1/products/update/:id`
+- [x] `DELETE /api/v1/products/delete/:id`
+- [x] `PATCH /api/v1/products/change-price/:id`
+- [x] `GET /health`
 
 ---
 
