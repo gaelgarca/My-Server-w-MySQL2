@@ -30,7 +30,8 @@ My-Server-w-MySQL2/
 │   └── schema.sql                     # Creación de la base y tabla products
 │
 ├── http/
-│   └── products.http                  # Solicitudes para probar y documentar la API
+│   ├── products.http                  # Colección reproducible de solicitudes
+│   └── test-results.md                # Resultados de la verificación HTTP
 │
 ├── src/
 │   ├── conf/
@@ -142,15 +143,14 @@ Comprueba los tipos sin generar archivos.
 
 ## 📌 Estado del Proyecto
 
-**Fase actual:** endpoints conectados a MySQL y verificados.
+**Fase actual:** pruebas HTTP y evidencia completadas.
 
-Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las seis operaciones utilizan consultas parametrizadas, validan las entradas esenciales y fueron comprobadas con datos reales de la base local.
+Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las operaciones fueron comprobadas con datos reales de la base local y la colección HTTP conserva un recorrido reproducible con casos exitosos e inválidos.
 
 ---
 
 ## 🧭 Próximos Pasos
 
-1. Completar las solicitudes de `http/products.http`.
-2. Ejecutar todos los casos exitosos e inválidos.
-3. Reunir la evidencia de funcionamiento.
-4. Verificar la ejecución compilada y publicar el repositorio.
+1. Completar la verificación técnica de producción.
+2. Terminar la documentación de cuerpos y respuestas.
+3. Realizar la revisión final del repositorio publicado.

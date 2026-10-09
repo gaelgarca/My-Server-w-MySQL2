@@ -20,7 +20,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Implementar los controladores de productos.
 - [x] Validar entradas y manejar errores.
 - [x] Probar todos los endpoints con MySQL.
-- [ ] Completar la evidencia de funcionamiento.
+- [x] Completar la evidencia de funcionamiento.
 - [x] Publicar el proyecto en GitHub.
 
 ---
@@ -142,20 +142,20 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 Actualizar y ejecutar las solicitudes de `http/products.http`.
 
-- [ ] Comprobar el endpoint de salud.
-- [ ] Crear un producto válido.
-- [ ] Consultar todos los productos activos.
-- [ ] Consultar por ID el producto creado.
-- [ ] Actualizar todos los datos del producto.
-- [ ] Cambiar solamente su precio.
-- [ ] Darlo de baja lógicamente.
-- [ ] Confirmar que ya no aparece en `getAll`.
-- [ ] Confirmar que `getById/:id` responde `404` después de la baja.
-- [ ] Probar un ID inexistente.
-- [ ] Probar un ID inválido.
-- [ ] Probar un precio igual a cero o negativo.
-- [ ] Probar un cuerpo con campos obligatorios faltantes.
-- [ ] Guardar las respuestas necesarias para demostrar el funcionamiento.
+- [x] Comprobar el endpoint de salud.
+- [x] Crear un producto válido.
+- [x] Consultar todos los productos activos.
+- [x] Consultar por ID el producto creado.
+- [x] Actualizar todos los datos del producto.
+- [x] Cambiar solamente su precio.
+- [x] Darlo de baja lógicamente.
+- [x] Confirmar que ya no aparece en `getAll`.
+- [x] Confirmar que `getById/:id` responde `404` después de la baja.
+- [x] Probar un ID inexistente.
+- [x] Probar un ID inválido.
+- [x] Probar un precio igual a cero o negativo.
+- [x] Probar un cuerpo con campos obligatorios faltantes.
+- [x] Guardar las respuestas necesarias para demostrar el funcionamiento.
 
 ---
 
