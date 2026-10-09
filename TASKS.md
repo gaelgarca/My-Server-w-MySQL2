@@ -21,7 +21,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Validar entradas y manejar errores.
 - [x] Probar todos los endpoints con MySQL.
 - [ ] Completar la evidencia de funcionamiento.
-- [ ] Publicar el proyecto en GitHub.
+- [x] Publicar el proyecto en GitHub.
 
 ---
 
@@ -187,12 +187,12 @@ Actualizar y ejecutar las solicitudes de `http/products.http`.
 - [x] Crear el repositorio Git local independiente.
 - [x] Configurar la rama principal como `main`.
 - [x] Crear el primer commit del proyecto.
-- [ ] Crear el repositorio público `My-Server-w-MySQL2` en GitHub.
-- [ ] Configurar el remoto `origin`.
-- [ ] Subir la rama `main`.
-- [ ] Verificar que `.env`, `node_modules` y `dist` no aparezcan en GitHub.
-- [ ] Crear commits separados y descriptivos para los cambios restantes.
-- [ ] Confirmar que el enlace público abre correctamente.
+- [x] Crear el repositorio público `My-Server-w-MySQL2` en GitHub.
+- [x] Configurar el remoto `origin`.
+- [x] Subir la rama `main`.
+- [x] Verificar que `.env`, `node_modules` y `dist` no aparezcan en GitHub.
+- [x] Crear commits separados y descriptivos para los cambios restantes.
+- [x] Confirmar que el enlace público abre correctamente.
 
 ---
 
