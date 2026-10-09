@@ -18,7 +18,7 @@ Lista de trabajo para completar la API REST de productos con **Node.js**, **Expr
 - [x] Inicializar un repositorio Git independiente.
 - [x] Configurar la base de datos local del proyecto.
 - [x] Implementar los controladores de productos.
-- [ ] Validar entradas y manejar errores.
+- [x] Validar entradas y manejar errores.
 - [ ] Probar todos los endpoints con MySQL.
 - [ ] Completar la evidencia de funcionamiento.
 - [ ] Publicar el proyecto en GitHub.
@@ -114,15 +114,15 @@ Archivo principal: `src/controllers/products.controller.ts`.
 
 ## 🛡️ 4. Validaciones y Manejo de Errores
 
-- [ ] Utilizar consultas parametrizadas con `?` en todas las operaciones.
-- [ ] No concatenar valores de las solicitudes dentro del SQL.
-- [ ] Responder `400` cuando el ID o los datos sean inválidos.
-- [ ] Responder `404` cuando el producto no exista o esté inactivo.
-- [ ] Responder `500` cuando ocurra un error interno o de base de datos.
-- [ ] No exponer contraseñas, consultas completas ni detalles internos en los errores.
-- [ ] Mantener respuestas JSON consistentes.
-- [ ] Evitar el uso innecesario de `any`.
-- [ ] Confirmar que el proyecto continúa compilando con `strict: true`.
+- [x] Utilizar consultas parametrizadas con `?` en todas las operaciones.
+- [x] No concatenar valores de las solicitudes dentro del SQL.
+- [x] Responder `400` cuando el ID o los datos sean inválidos.
+- [x] Responder `404` cuando el producto no exista o esté inactivo.
+- [x] Responder `500` cuando ocurra un error interno o de base de datos.
+- [x] No exponer contraseñas, consultas completas ni detalles internos en los errores.
+- [x] Mantener respuestas JSON consistentes.
+- [x] Evitar el uso innecesario de `any`.
+- [x] Confirmar que el proyecto continúa compilando con `strict: true`.
 
 ---
 

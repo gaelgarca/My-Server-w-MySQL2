@@ -241,8 +241,11 @@ const respondWithInternalError = (
   operation: string,
   error: unknown
 ): void => {
-  const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
-  console.error(`[products] ${operation}: ${errorMessage}`);
+  const errorCode =
+    isRecord(error) && typeof error.code === 'string'
+      ? error.code
+      : 'UNKNOWN_ERROR';
+  console.error(`[products] ${operation} (${errorCode})`);
 
   response.status(500).json({
     message: 'Ocurrió un error interno al procesar la solicitud.'

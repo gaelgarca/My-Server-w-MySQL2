@@ -142,16 +142,15 @@ Comprueba los tipos sin generar archivos.
 
 ## 📌 Estado del Proyecto
 
-**Fase actual:** controladores conectados a MySQL y validados.
+**Fase actual:** controladores, validaciones y manejo de errores completados.
 
-Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las seis operaciones de productos utilizan consultas parametrizadas, validan las entradas esenciales y trabajan con la base de datos local.
+Las dependencias están instaladas, TypeScript compila correctamente y el servidor responde en `/health`. Las seis operaciones utilizan consultas parametrizadas, validan las entradas esenciales y devuelven respuestas JSON controladas para errores de cliente, recursos inexistentes y fallos internos.
 
 ---
 
 ## 🧭 Próximos Pasos
 
-1. Revisar de forma global las validaciones y el manejo de errores.
-2. Completar las solicitudes de `http/products.http`.
-3. Ejecutar todos los casos exitosos e inválidos.
-4. Reunir la evidencia de funcionamiento.
-5. Verificar la ejecución compilada y publicar el repositorio.
+1. Completar las solicitudes de `http/products.http`.
+2. Ejecutar todos los casos exitosos e inválidos.
+3. Reunir la evidencia de funcionamiento.
+4. Verificar la ejecución compilada y publicar el repositorio.
